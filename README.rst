@@ -15,7 +15,20 @@ including:
 * Plugins to preview spatial formats such as GeoJSON_.
 
 Full documentation, including installation instructions, can be found at:
-    
+
+sudo apt-get install postgresql-9.1-postgis 
+command did not work.
+
+Installed postgis using:
+brew install postgis
+
+Following first command worked but not the second one.
+sudo -u postgres psql -d ckan_default -f /Users/tthakur/ckan/lib/default/src/ckanext-spatial/ckanext/spatial/tests/scripts/postgis.sql
+
+sudo -u postgres psql -d ckan_default -f /Users/tthakur/ckan/lib/default/src/ckanext-spatial/ckanext/spatial/tests/scripts/spatial_ref_sys.sql
+
+We need to find a way to run it. 
+
 http://docs.ckan.org/projects/ckanext-spatial
 
 
